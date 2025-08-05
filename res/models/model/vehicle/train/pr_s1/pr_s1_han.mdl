@@ -1,0 +1,551 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 7.4156, 1.5253533124924, 4.5, },
+		bbMin = { -7.97, -1.5253533124924, -0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 25, 0, 2.3594336509705, 4},
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+                    {
+				        children = {
+					        {
+						        materials = { "vehicle/train/pr_s1_han/rumpf.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/s1_rumpf_hannover_lod0.msh",
+						        name = "rumpf_S1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+							{
+						        materials = { "vehicle/train/pr_s1_han/glas.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/s1_glas_hannover_lod0.msh",
+						        name = "rumpf_S1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+							{
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/s1_innen_hannover_lod0.msh",
+						        name = "rumpf_S1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+							{
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1/s1_rad_gross_lod0.msh",
+						        name = "rumpf_S1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.69325, 0, 0.97671, 1, },
+					        },
+							{
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/s1_rad_gross_hannover_lod0.msh",
+						        name = "rumpf_S1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.26595, 0, 0.97671, 1, },
+					        },
+							{
+						        materials = { "vehicle/train/pr_s1_han/licht.mtl", },
+						        mesh = "vehicle/train/pr_s1/s1_rumpf_licht_lod0.msh",
+						        name = "rumpf_S1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+							{
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1/s1_rad_vorne_lod0.msh",
+						        name = "rumpf_S1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.4999, 0, 0.52866, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/antrieb_links.ani", --fehler in der rotation nur drehen
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/antrieb_links_lod0.msh",
+						        name = "antrieb_links",
+						        transf = { 0.97869962453842, 0, -0.20529706776142, 0, 0, 1, 0, 0, 0.20529706776142, 0, 0.97869962453842, 0, 0.26594686508179, 1.0455100536346, 1.2487196922302, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/hebel_links.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/hebel_links_lod0.msh",
+						        name = "antrieb_links",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.2952, 1.0763, 1.4041, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/hinterhebel_links.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/hinterhebel_links_lod0.msh",
+						        name = "antrieb_links",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.38867, 1.1432, 0.9871, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/kleinhebel_links.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/kleinhebel_links_lod0.msh",
+						        name = "antrieb_links",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8988, 1.049, 0.97683, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/koppel_links.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/koppel_links_lod0.msh",
+						        name = "antrieb_links",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.26595, 1.0455, 1.2487, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/schieber_links.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/schieber_links_lod0.msh",
+						        name = "antrieb_links",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8972, 0.95577, 0.98274, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/schwinge_links.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/schwinge_links_lod0.msh",
+						        name = "antrieb_links",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8555, 1.1418, 1.3126, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/steuer_links.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/steuer_links_lod0.msh",
+						        name = "antrieb_links",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9815, 1.1462, 1.308, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/unterhebel_links.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/unterhebel_links_lod0.msh",
+						        name = "antrieb_links",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8975, 1.0996, 0.59708, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/ventil_links.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/ventil_links_lod0.msh",
+						        name = "antrieb_links",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+							---------------------------
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/antrieb_rechts.ani", 
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/antrieb_rechts_lod0.msh",
+						        name = "antrieb_rechts",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.26595, -1.0455, 0.70518, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/hebel_rechts.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/hebel_rechts_lod0.msh",
+						        name = "antrieb_rechts",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.2952, -1.0763, 1.4041, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/hinterhebel_rechts.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/hinterhebel_rechts_lod0.msh",
+						        name = "antrieb_rechts",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.38867, -1.1432, 0.9871, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/kleinhebel_rechts.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/kleinhebel_rechts_lod0.msh",
+						        name = "antrieb_rechts",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8988, -1.049, 0.97683, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/koppel_rechts.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/koppel_rechts_lod0.msh",
+						        name = "antrieb_rechts",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.26595, -1.0455, 0.70518, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/schieber_rechts.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/schieber_rechts_lod0.msh",
+						        name = "antrieb_rechts",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8972, -0.95577, 0.98274, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/schwinge_rechts.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/schwinge_rechts_lod0.msh",
+						        name = "antrieb_rechts",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8555, -1.1418, 1.3126, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/steuer_rechts.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/steuer_rechts_lod0.msh",
+						        name = "antrieb_rechts",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9815, -1.1462, 1.308, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/unterhebel_rechts.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/unterhebel_rechts_lod0.msh",
+						        name = "antrieb_rechts",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8975, -1.0996, 0.59708, 1, },
+					        },
+					        {
+						       animations = {
+							       wheels = {
+							       params = {
+							        id = "vehicle/train/pr_s1_han/ventil_rechts.ani",
+									},
+							       type = "FILE_REF",
+							       },
+						       },
+						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+						        mesh = "vehicle/train/pr_s1_han/ventil_rechts_lod0.msh",
+						        name = "antrieb_rechts",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8173, -0.97526, 1.4042, 1, },
+					        },
+                        },
+		                name = "prP2",
+		                transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, },
+                    },
+                    {
+				        children = {
+				            {
+					            materials = { "vehicle/train/pr_s1_han/tender.mtl", },
+					            mesh = "vehicle/train/pr_s1_han/tender_alt_lod0.msh",
+					            name = "rumpf_s1_tender",
+					            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				            },
+				            {
+					            materials = { "vehicle/train/pr_s1_han/licht.mtl", },
+					            mesh = "vehicle/train/pr_s1/tender_licht_lod0.msh",
+					            name = "rumpf_s1_tender",
+					            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				            },
+				            {
+					            materials = { "vehicle/train/pr_s1_han/glas.mtl", },
+					            mesh = "vehicle/train/pr_s1/s1_glas_tender_lod0.msh",
+					            name = "rumpf_s1_tender",
+					            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				            },
+				            {
+					            materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+					            mesh = "vehicle/train/pr_s1/rad_tender_lod0.msh",
+					            name = "rumpf_s1_tender",
+					            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.658, 0, 0.50463, 1, },
+				            },
+				            {
+					            materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+					            mesh = "vehicle/train/pr_s1/rad_tender_lod0.msh",
+					            name = "rumpf_s1_tender",
+					            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.015, 0, 0.50463, 1, },
+				            },
+				            {
+					            materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
+					            mesh = "vehicle/train/pr_s1/rad_tender_lod0.msh",
+					            name = "rumpf_s1_tender",
+					            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.615, 0, 0.50463, 1, },
+				            },
+                        },
+		                name = "tender_s1_old",
+		                transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.99, 0, 0, 1, },
+                    },
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 2500,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1879,
+			yearTo = 1881,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			name = _("pr_s1a_name"),
+			description = _("pr_s1a_desc"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.6, 0.7, 0.7, },
+					frequency = 60,
+					lifeTime = 4,
+					position = { 3.24, 0, 4.35, },
+					size01 = { 0.25, 4, },
+					velocity = { 0, 0, 8, },
+				},
+				{
+					child = 1,
+					color = { 0.7, 0.7, 0.7, },
+					frequency = 80,
+					lifeTime = 1,
+					position = { 2.41, -1.025, 1.25, },
+					size01 = { 0.1, 0.2, },
+					velocity = { -1, 0, -0.25, },
+				},
+				{
+					child = 1,
+					color = { 0.7, 0.7, 0.7, },
+					frequency = 80,
+					lifeTime = 1,
+					position = { 2.41, 1.025, 1.25, },
+					size01 = { 0.1, 0.2, },
+					velocity = { -1, 0, -0.25, },
+				},
+			},
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = {
+								
+
+																		},
+					backBackwardParts = {  },
+					backForwardParts = {  },
+					frontBackwardParts = {  },
+					frontForwardParts = {  },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = {
+								
+
+																		},
+					backBackwardParts = {  },
+					backForwardParts = {  },
+					frontBackwardParts = {  },
+					frontForwardParts = {  },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { 
+							 
+																		},
+					backBackwardParts = { },
+					backForwardParts = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 150,
+					tractiveEffort = 30,
+					type = "STEAM",
+				},
+			},
+			soundSet = { name = "train_steam_old", },
+			topSpeed = 19.44444444,
+			weight = 49.5,
+		},
+		seatProvider = {
+			drivingLicense = "RAIL",
+			seats = {
+				{
+                    animation = "idle",
+                    crew = true,
+                    forward = true,
+                    group = 1,
+                    standing = true,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.8, -0.8, 1.25, 1, },
+                },
+				{
+                    animation = "idle",
+                    crew = true,
+                    forward = true,
+                    group = 1,
+                    standing = true,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.8, 0.8, 1.25, 1, },
+                },
+				{
+                    animation = "idle",
+                    crew = true,
+                    forward = false,
+                    group = 1,
+                    standing = true,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -0.8, -0.8, 1.25, 1, },
+                },
+				{
+                    animation = "idle",
+                    crew = true,
+                    forward = false,
+                    group = 1,
+                    standing = true,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -0.8, 0.8, 1.25, 1, },
+                },
+            },
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartments = {
+				{
+					{ },
+				},
+			},
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+            groupFileName = "vehicle/train/pr_p2/menu_pr_p2.mdl",
+		},
+	},
+	version = 1,
+}
+end
