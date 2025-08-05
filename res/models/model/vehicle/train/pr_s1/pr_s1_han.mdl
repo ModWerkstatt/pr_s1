@@ -1,8 +1,8 @@
 function data()
 return {
 	boundingInfo = {
-		bbMax = { 7.4156, 1.5253533124924, 4.5, },
-		bbMin = { -7.97, -1.5253533124924, -0, },
+		bbMax = { 8.4534, 1.5253533124924, 4.5, },
+		bbMin = { -6.411, -1.5253533124924, 0, },
 	},
 	collider = {
 		params = {
@@ -19,43 +19,49 @@ return {
 				        children = {
 					        {
 						        materials = { "vehicle/train/pr_s1_han/rumpf.mtl", },
-						        mesh = "vehicle/train/pr_s1_han/s1_rumpf_hannover_lod0.msh",
+						        mesh = "vehicle/train/pr_s1_han/rumpf_hannover_lod0.msh",
 						        name = "rumpf_S1",
 						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					        },
 							{
 						        materials = { "vehicle/train/pr_s1_han/glas.mtl", },
-						        mesh = "vehicle/train/pr_s1_han/s1_glas_hannover_lod0.msh",
+						        mesh = "vehicle/train/pr_s1_han/glas_hannover_lod0.msh",
 						        name = "rumpf_S1",
 						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					        },
 							{
 						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
-						        mesh = "vehicle/train/pr_s1_han/s1_innen_hannover_lod0.msh",
+						        mesh = "vehicle/train/pr_s1_han/innen_hannover_lod0.msh",
 						        name = "rumpf_S1",
 						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					        },
 							{
 						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
-						        mesh = "vehicle/train/pr_s1/s1_rad_gross_lod0.msh",
+						        mesh = "vehicle/train/pr_s1/rad_gross_lod0.msh",
 						        name = "rumpf_S1",
 						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.69325, 0, 0.97671, 1, },
 					        },
 							{
 						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
-						        mesh = "vehicle/train/pr_s1_han/s1_rad_gross_hannover_lod0.msh",
+						        mesh = "vehicle/train/pr_s1_han/rad_gross_hannover_lod0.msh",
 						        name = "rumpf_S1",
 						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.26595, 0, 0.97671, 1, },
 					        },
 							{
-						        materials = { "vehicle/train/pr_s1_han/licht.mtl", },
-						        mesh = "vehicle/train/pr_s1/s1_rumpf_licht_lod0.msh",
-						        name = "rumpf_S1",
+						        materials = { "vehicle/train/pr_s1a/licht.mtl", },
+						        mesh = "vehicle/train/pr_s1/licht/licht_vorne_weiss_lod0.msh",
+						        name = "Licht",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+							{
+						        materials = { "vehicle/train/pr_s1a/licht.mtl", },
+						        mesh = "vehicle/train/pr_s1/licht/licht_vorne_rot_lod0.msh",
+						        name = "Licht",
 						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					        },
 							{
 						        materials = { "vehicle/train/pr_s1_han/beweglich.mtl", },
-						        mesh = "vehicle/train/pr_s1/s1_rad_vorne_lod0.msh",
+						        mesh = "vehicle/train/pr_s1/rad_vorne_lod0.msh",
 						        name = "rumpf_S1",
 						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.4999, 0, 0.52866, 1, },
 					        },
@@ -204,7 +210,7 @@ return {
 						       animations = {
 							       wheels = {
 							       params = {
-							        id = "vehicle/train/pr_s1_han/antrieb_rechts.ani", 
+							        id = "vehicle/train/pr_s1_han/antrieb_rechts.ani",
 									},
 							       type = "FILE_REF",
 							       },
@@ -341,7 +347,7 @@ return {
 						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8173, -0.97526, 1.4042, 1, },
 					        },
                         },
-		                name = "prP2",
+		                name = "prS1",
 		                transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, },
                     },
                     {
@@ -353,14 +359,20 @@ return {
 					            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 				            },
 				            {
-					            materials = { "vehicle/train/pr_s1_han/licht.mtl", },
-					            mesh = "vehicle/train/pr_s1/tender_licht_lod0.msh",
-					            name = "rumpf_s1_tender",
+					            materials = { "vehicle/train/pr_s1a/licht.mtl", },
+					            mesh = "vehicle/train/pr_s1/licht/licht_hinten_rot_lod0.msh",
+					            name = "Licht",
+					            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				            },
+				            {
+					            materials = { "vehicle/train/pr_s1a/licht.mtl", },
+					            mesh = "vehicle/train/pr_s1/licht/licht_hinten_weiss_lod0.msh",
+					            name = "Licht",
 					            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 				            },
 				            {
 					            materials = { "vehicle/train/pr_s1_han/glas.mtl", },
-					            mesh = "vehicle/train/pr_s1/s1_glas_tender_lod0.msh",
+					            mesh = "vehicle/train/pr_s1/glas_tender_lod0.msh",
 					            name = "rumpf_s1_tender",
 					            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 				            },
@@ -397,15 +409,15 @@ return {
 	},
 	metadata = {
 		availability = {
-			yearFrom = 1879,
-			yearTo = 1881,
+			yearFrom = 1884,
+			yearTo = 1922,
 		},
 		cost = {
 			price = -1,
 		},
 		description = {
-			name = _("pr_s1a_name"),
-			description = _("pr_s1a_desc"),
+			name = _("pr_s1han_name"),
+			description = _("pr_s1han_desc"),
 		},
 		emission = {
 			idleEmission = -1,
@@ -423,35 +435,44 @@ return {
 					color = { 0.6, 0.7, 0.7, },
 					frequency = 60,
 					lifeTime = 4,
-					position = { 3.24, 0, 4.35, },
+					position = { 6.01, 0, 4.1, },
 					size01 = { 0.25, 4, },
-					velocity = { 0, 0, 8, },
+					velocity = { 0, 0, 3, },
 				},
 				{
 					child = 1,
 					color = { 0.7, 0.7, 0.7, },
 					frequency = 80,
-					lifeTime = 1,
-					position = { 2.41, -1.025, 1.25, },
+					lifeTime = 0.5,
+					position = { 3.65, -0.95, 0.44, },
 					size01 = { 0.1, 0.2, },
-					velocity = { -1, 0, -0.25, },
+					velocity = { -1, 0, -1.1, },
 				},
 				{
 					child = 1,
 					color = { 0.7, 0.7, 0.7, },
 					frequency = 80,
-					lifeTime = 1,
-					position = { 2.41, 1.025, 1.25, },
+					lifeTime = 0.5,
+					position = { 3.65, 0.95, 0.44, },
 					size01 = { 0.1, 0.2, },
-					velocity = { -1, 0, -0.25, },
+					velocity = { -1, 0, -1.1, },
 				},
 			},
 		},
 		railVehicle = {
 			configs = {
 				{
+					axles = { "vehicle/train/pr_s1/rad_gross_lod0.msh", "vehicle/train/pr_s1/rad_vorne_lod0.msh", "vehicle/train/pr_s1/rad_tender_lod0.msh", },
+					backBackwardParts = { 22, },
+					backForwardParts = { 21, },
+					frontBackwardParts = { 12, },
+					frontForwardParts = { 11, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
 					axles = {
-								
+
 
 																		},
 					backBackwardParts = {  },
@@ -463,19 +484,7 @@ return {
 				},
 				{
 					axles = {
-								
 
-																		},
-					backBackwardParts = {  },
-					backForwardParts = {  },
-					frontBackwardParts = {  },
-					frontForwardParts = {  },
-					innerBackwardParts = { },
-					innerForwardParts = { },
-				},
-				{
-					axles = { 
-							 
 																		},
 					backBackwardParts = { },
 					backForwardParts = { },
@@ -487,14 +496,14 @@ return {
 			},
 			engines = {
 				{
-					power = 150,
-					tractiveEffort = 30,
+					power = 453,
+					tractiveEffort = 60,
 					type = "STEAM",
 				},
 			},
 			soundSet = { name = "train_steam_old", },
-			topSpeed = 19.44444444,
-			weight = 49.5,
+			topSpeed = 23.611111111,
+			weight = 53,
 		},
 		seatProvider = {
 			drivingLicense = "RAIL",
@@ -543,7 +552,7 @@ return {
 			loadSpeed = 1,
 			multipleUnitOnly = false,
 			reversible = false,
-            groupFileName = "vehicle/train/pr_p2/menu_pr_p2.mdl",
+            groupFileName = "vehicle/train/pr_s1/menu_pr_s1.mdl",
 		},
 	},
 	version = 1,
