@@ -900,7 +900,7 @@ return {
 					innerForwardParts = { },
 				},
 				{
-					axles = { "vehicle/train/pr_s1/rad_gross_lod1.msh", "vehicle/train/pr_s1/rad_vorne_lod1.msh", "vehicle/train/pr_s1/rad_tender_lod1.msh", },
+					axles = { "vehicle/train/pr_s1/rad_gross_lod1.msh", "vehicle/train/pr_s1/rad_vorne_lod1.msh", "vehicle/train/pr_s1/rad_tender_lod2.msh", },
 				},
 				{
 					axles = { "vehicle/train/pr_s1/rad_gross_lod2.msh", "vehicle/train/pr_s1/rad_vorne_lod2.msh", "vehicle/train/pr_s1/rad_tender_lod2.msh", },
