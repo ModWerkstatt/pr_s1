@@ -536,7 +536,7 @@ return {
 		},
 		description = {
 			name = _("pr_s1b4_name"),
-			description = _("pr_s1b_desc"),
+			description = _("pr_s1b4_desc"),
 		},
 		emission = {
 			idleEmission = -1,
@@ -582,10 +582,10 @@ return {
 			configs = {
 				{
 					axles = { "vehicle/train/pr_s1/rad_gross_lod0.msh", "vehicle/train/pr_s1/rad_vorne_lod0.msh", "vehicle/train/pr_s1/rad_tender_lod0.msh", },
-					backBackwardParts = { 22, },
-					backForwardParts = { 21, },
-					frontBackwardParts = { 12, },
-					frontForwardParts = { 11, },
+					backBackwardParts = { 24, },
+					backForwardParts = { 23, },
+					frontBackwardParts = { 9, },
+					frontForwardParts = { 8, },
 					innerBackwardParts = { },
 					innerForwardParts = { },
 				},

@@ -488,7 +488,7 @@ return {
 		},
 		description = {
 			name = _("pr_s1b2_name"),
-			description = _("pr_s1b_desc"),
+			description = _("pr_s1b2_desc"),
 		},
 		emission = {
 			idleEmission = -1,
