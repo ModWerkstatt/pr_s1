@@ -36,7 +36,7 @@ return {
 						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					        },
 							{
-						        materials = { "vehicle/train/pr_s1a/beweglich.mtl", },
+						        materials = { "vehicle/train/pr_s1/beweglich.mtl", },
 						        mesh = "vehicle/train/pr_s1/innen_lod0.msh",
 						        name = "rumpf_S1",
 						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
