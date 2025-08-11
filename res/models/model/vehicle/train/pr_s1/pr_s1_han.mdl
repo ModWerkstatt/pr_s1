@@ -891,7 +891,7 @@ return {
 		railVehicle = {
 			configs = {
 				{
-					axles = { "vehicle/train/pr_s1/rad_gross_lod0.msh", "vehicle/train/pr_s1/rad_gross_hannover_lod0.msh", "vehicle/train/pr_s1/rad_vorne_lod0.msh", "vehicle/train/pr_s1/rad_tender_lod0.msh", },
+					axles = { "vehicle/train/pr_s1/rad_gross_lod0.msh", "vehicle/train/pr_s1/rad_gross_lod0.msh",, "vehicle/train/pr_s1/rad_vorne_lod0.msh", "vehicle/train/pr_s1/rad_tender_lod0.msh", },
 					backBackwardParts = { 22, },
 					backForwardParts = { 21, },
 					frontBackwardParts = { 12, },
