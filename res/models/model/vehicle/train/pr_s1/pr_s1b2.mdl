@@ -480,7 +480,7 @@ return {
 	},
 	metadata = {
 		availability = {
-			yearFrom = 1885,
+			yearFrom = 1890,
 			yearTo = 1923,
 		},
 		cost = {
