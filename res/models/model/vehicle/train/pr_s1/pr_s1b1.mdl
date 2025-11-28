@@ -550,7 +550,7 @@ return {
 			},
 			engines = {
 				{
-					power = 435,
+					power = 430,
 					tractiveEffort = 60,
 					type = "STEAM",
 				},
