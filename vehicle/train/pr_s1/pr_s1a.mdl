@@ -619,7 +619,7 @@ return {
 			},
 			description = { 
 				description = _("pr_s1_desc"),
-				name = _("pr_s1"),
+				name = _("pr_s1a"),
 			},
 			emissions = { 
 				noise = { 
