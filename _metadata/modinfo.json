@@ -1,0 +1,22 @@
+{
+    "name": "Prussian S1",
+    "summary": "The most important and most built universal steam locomotive of DRG.",
+    "description": "A total of 261 examples of the standard S 1 were built between 1885 and 1898. They were also included in the Prussian standard series. This locomotive type was developed from the P 2 and P 3.1 passenger locomotives and was intended for express train service on long, straight routes such as the Berlin–Stendal–Lehrte line. Unlike the other S 1 type, the front axle was again located behind the cylinder, and the compound design was omitted. On the Berlin-Hamburg Railway, they hauled passenger trains weighing 171 tons at a speed of 80 km/h. With the advent of more powerful locomotives, they were relegated to passenger train service. The Essen Directorate therefore classified its three locomotives as P 3.",
+    "localization" : {
+        "de": {
+            "name": "Preußische S1",
+            "summary": "Eine der wichtigsten und meist gebauten Dampflokomotiven der DRG.",
+            "description": "Von der Normalbauart der S 1 wurden in den Jahren von 1885 bis 1898 insgesamt 261 Exemplare gebaut. Sie wurden auch in die preußischen Normalien aufgenommen. Dieser Lokomotivtyp war aus den Personenzuglokomotiven der Gattungen P 2 und P 3.1 entwickelt worden und war für den Schnellzugverkehr auf langen, geraden Strecken wie zum Beispiel Berlin–Stendal–Lehrte gedacht. Im Gegensatz zum anderen Typ der S 1 war hier wieder die vordere Laufachse hinter dem Zylinder angeordnet und man hatte auf die Verbundausführung verzichtet. Bei der Berlin-Hamburger Bahn zogen sie Reisezüge von 171 Tonnen Gewicht mit einer Geschwindigkeit von 80 km/h. Mit dem Erscheinen stärkerer Lokomotiven wurden sie in den Personenzugdienst verdrängt. Die Direktion Essen stufte ihre drei Lokomotiven daher als P 3 ein."
+        }
+    },
+    "authors": [
+        {
+            "name": "ModWerkstatt",
+            "role": "CREATOR"
+        }
+    ],
+    "tags": [
+        "Locomotive"
+    ],
+    "url": "https://www.modwerkstatt.com/downloads/tpf3/preussische-s1"
+}
