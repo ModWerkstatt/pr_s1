@@ -1114,6 +1114,7 @@ return {
 				},
 				engineTags = { "TRAIN", "ELECTRIC_TRAIN", },
 				groupFileName = "menu_pr_s1.mdl",
+				reversible = false,
 				tags = { "TRAIN", "ELECTRIC_TRAIN", },
 			},
 		},
