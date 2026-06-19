@@ -31,7 +31,7 @@ return {
 								},
 								{ 
 									materials = { "mat/pr_s1/rumpf_b.mtl", },
-									mesh = "msh/kamin_1_lod0.msh",
+									mesh = "msh/kamin_2_lod0.msh",
 									name = "rumpf_S1",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
@@ -303,7 +303,7 @@ return {
 								},
 								{ 
 									materials = { "mat/pr_s1/rumpf_b.mtl", },
-									mesh = "msh/kamin_1_lod1.msh",
+									mesh = "msh/kamin_2_lod1.msh",
 									name = "rumpf_S1",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
@@ -563,7 +563,7 @@ return {
 								},
 								{ 
 									materials = { "mat/pr_s1/rumpf_b.mtl", },
-									mesh = "msh/kamin_1_lod2.msh",
+									mesh = "msh/kamin_2_lod2.msh",
 									name = "rumpf_S1",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
@@ -629,15 +629,15 @@ return {
 		},
 		metadata = { 
 			availability = { 
-				yearFrom = 1900,
+				yearFrom = 1890,
 				yearTo = 1923,
 			},
 			cost = { 
 				price = -1,
 			},
 			description = { 
-				description = _("pr_s1b1_desc"),
-				name = _("pr_s1b1"),
+				description = _("pr_s1b2_desc"),
+				name = _("pr_s1b2"),
 			},
 			emissions = { 
 				noise = { 
@@ -652,7 +652,7 @@ return {
 				},
 			},
 			extent = { 
-				bbMax = { 8.4538021087646484375, 1.424366474151611328125, 4.16653537750244140625, },
+				bbMax = { 8.4538021087646484375, 1.424366474151611328125, 4.184513568878173828125, },
 				bbMin = { -6.410580158233642578125, -1.424366474151611328125, -0.0579204559326171875, },
 			},
 			landVehicle = { 
@@ -1064,10 +1064,11 @@ return {
 						},
 					},
 				},
-				engineTags = { "TRAIN", "ELECTRIC_TRAIN", },
+				engineTransportModes = { "TRAIN", "ELECTRIC_TRAIN", },
 				groupFileName = "menu_pr_s1.mdl",
 				reversible = false,
-				tags = { "TRAIN", "ELECTRIC_TRAIN", },
+				transportModes = { "TRAIN", "ELECTRIC_TRAIN", },
+				filterTags = { "default", },
 			},
 		},
 		version = 2,

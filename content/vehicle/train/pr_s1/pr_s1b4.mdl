@@ -18,34 +18,40 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/pr_s1_han/rumpf.mtl", },
-									mesh = "msh/pr_s1_han/rumpf_hannover_lod0.msh",
+									materials = { "mat/pr_s1/rumpf_b.mtl", },
+									mesh = "msh/rumpf_b_lod0.msh",
 									name = "body",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/shared/glas.mtl", },
-									mesh = "msh/pr_s1_han/glas_hannover_lod0.msh",
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/hanomagbremse_lod0.msh",
 									name = "rumpf_S1",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/innen.mtl", },
-									mesh = "msh/pr_s1_han/innen_hannover_lod0.msh",
+									materials = { "mat/pr_s1/rumpf_b.mtl", },
+									mesh = "msh/kamin_1_lod0.msh",
+									name = "rumpf_S1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/shared/glas.mtl", },
+									mesh = "msh/glas_lod0.msh",
+									name = "rumpf_S1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/innen.mtl", },
+									mesh = "msh/innen_lod0.msh",
 									name = "interior",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/rad_gross_lod0.msh",
-									name = "a1",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6932499408721923828125, 0, 0.976710021495819091796875, 1, },
-								},
-								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/rad_gross_hannover_lod0.msh",
-									name = "a2",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.2659499943256378173828125, 0, 0.976710021495819091796875, 1, },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/innenrahmen_lod0.msh",
+									name = "rumpf_S1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
 									animations = { 
@@ -92,80 +98,49 @@ return {
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
+									animations = { 
+										close_all_doors = { 
+											forward = false,
+											params = { 
+												id = "ani/seitenfenster.ani",
+											},
+											type = "FILE_REF",
+										},
+										open_all_doors = { 
+											params = { 
+												id = "ani/seitenfenster.ani",
+											},
+											type = "FILE_REF",
+										},
+									},
+									materials = { "mat/pr_s1/beweglich_b.mtl", "mat/shared/glas.mtl", },
+									mesh = "msh/seitenfenster_lod0.msh",
+									name = "rumpf_S1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/schild_lod0.msh",
+									name = "rumpf_S1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/rad_gross_lod0.msh",
+									name = "a1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4878700077533721923828125, 0, 0.976710021495819091796875, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/rad_gross_lod0.msh",
+									name = "a2",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, 0, 0.976710021495819091796875, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
 									mesh = "msh/rad_vorne_lod0.msh",
 									name = "a3",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.49989986419677734375, 0, 0.528659999370574951171875, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/antrieb_links.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/antrieb_links_lod0.msh",
-									name = "antrieb_links",
-									transf = { 0.978699624538421630859375, 0, -0.20529706776142120361328125, 0, 0, 1, 0, 0, 0.20529706776142120361328125, 0, 0.978699624538421630859375, 0, 0.265946865081787109375, 1.0455100536346435546875, 1.248719692230224609375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/hebel_links.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/hebel_links_lod0.msh",
-									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.2952001094818115234375, 1.07630002498626708984375, 1.404099941253662109375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/hinterhebel_links.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/hinterhebel_links_lod0.msh",
-									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3886699974536895751953125, 1.14320003986358642578125, 0.98710000514984130859375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/kleinhebel_links.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/kleinhebel_links_lod0.msh",
-									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.898799896240234375, 1.0490000247955322265625, 0.976830005645751953125, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/koppel_links.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/koppel_links_lod0.msh",
-									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.2659499943256378173828125, 1.0455000400543212890625, 1.24870002269744873046875, 1, },
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.9685001373291015625, 0, 0.528659999370574951171875, 1, },
 								},
 								{ 
 									animations = { 
@@ -176,136 +151,38 @@ return {
 											type = "FILE_REF",
 										},
 									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/schieber_links_lod0.msh",
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/schieber_links_lod0.msh",
 									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.897200107574462890625, 0.955770015716552734375, 0.982739984989166259765625, 1, },
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.795899868011474609375, 0.955770015716552734375, 0.98799002170562744140625, 1, },
 								},
 								{ 
 									animations = { 
 										wheels = { 
 											params = { 
-												id = "ani/schwinge_links.ani",
+												id = "ani/antrieb_links.ani",
 											},
 											type = "FILE_REF",
 										},
 									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/schwinge_links_lod0.msh",
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/antrieb_links_lod0.msh",
 									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8554999828338623046875, 1.14180004596710205078125, 1.31260001659393310546875, 1, },
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, 0.9489099979400634765625, 1.27199995517730712890625, 1, },
 								},
 								{ 
 									animations = { 
 										wheels = { 
 											params = { 
-												id = "ani/steuer_links.ani",
+												id = "ani/koppel_links.ani",
 											},
 											type = "FILE_REF",
 										},
 									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/steuer_links_lod0.msh",
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/koppel_links_lod0.msh",
 									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.98150002956390380859375, 1.1461999416351318359375, 1.30799996852874755859375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/unterhebel_links.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/unterhebel_links_lod0.msh",
-									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.89750003814697265625, 1.09959995746612548828125, 0.5970799922943115234375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/ventil_links.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/ventil_links_lod0.msh",
-									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/antrieb_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/antrieb_rechts_lod0.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.2659499943256378173828125, -1.0455000400543212890625, 0.705179989337921142578125, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/hebel_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/hebel_rechts_lod0.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.2952001094818115234375, -1.07630002498626708984375, 1.404099941253662109375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/hinterhebel_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/hinterhebel_rechts_lod0.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3886699974536895751953125, -1.14320003986358642578125, 0.98710000514984130859375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/kleinhebel_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/kleinhebel_rechts_lod0.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.898799896240234375, -1.0490000247955322265625, 0.976830005645751953125, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/koppel_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/koppel_rechts_lod0.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.2659499943256378173828125, -1.0455000400543212890625, 0.705179989337921142578125, 1, },
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, 0.948939979076385498046875, 1.27199995517730712890625, 1, },
 								},
 								{ 
 									animations = { 
@@ -316,66 +193,38 @@ return {
 											type = "FILE_REF",
 										},
 									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/schieber_rechts_lod0.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.897200107574462890625, -0.955770015716552734375, 0.982739984989166259765625, 1, },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/schieber_rechts_lod0.msh",
+									name = "antrieb_links",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.795899868011474609375, -0.955770015716552734375, 0.98799002170562744140625, 1, },
 								},
 								{ 
 									animations = { 
 										wheels = { 
 											params = { 
-												id = "ani/schwinge_rechts.ani",
+												id = "ani/antrieb_rechts.ani",
 											},
 											type = "FILE_REF",
 										},
 									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/schwinge_rechts_lod0.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8554999828338623046875, -1.14180004596710205078125, 1.31260001659393310546875, 1, },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/antrieb_rechts_lod0.msh",
+									name = "antrieb_links",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, -0.9351999759674072265625, 0.6834800243377685546875, 1, },
 								},
 								{ 
 									animations = { 
 										wheels = { 
 											params = { 
-												id = "ani/steuer_rechts.ani",
+												id = "ani/koppel_rechts.ani",
 											},
 											type = "FILE_REF",
 										},
 									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/steuer_rechts_lod0.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.98150002956390380859375, -1.1461999416351318359375, 1.30799996852874755859375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/unterhebel_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/unterhebel_rechts_lod0.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.89750003814697265625, -1.09959995746612548828125, 0.5970799922943115234375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/ventil_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/ventil_rechts_lod0.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8173000812530517578125, -0.9752600193023681640625, 1.40419995784759521484375, 1, },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/koppel_rechts_lod0.msh",
+									name = "antrieb_links",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, -0.9351999759674072265625, 0.6834800243377685546875, 1, },
 								},
 							},
 							name = "prS1",
@@ -384,8 +233,8 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/pr_s1_han/tender.mtl", },
-									mesh = "msh/pr_s1_han/tender_alt_lod0.msh",
+									materials = { "mat/pr_s1/tender_b.mtl", },
+									mesh = "msh/tender_alt_lod0.msh",
 									name = "rumpf_s1_tender",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
@@ -440,19 +289,19 @@ return {
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
 									mesh = "msh/rad_tender_lod0.msh",
 									name = "a4",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.65799999237060546875, 0, 0.504630029201507568359375, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
 									mesh = "msh/rad_tender_lod0.msh",
 									name = "a5",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.014999999664723873138427734375, 0, 0.504630029201507568359375, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
 									mesh = "msh/rad_tender_lod0.msh",
 									name = "a6",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6150000095367431640625, 0, 0.504630029201507568359375, 1, },
@@ -474,34 +323,22 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/pr_s1_han/rumpf.mtl", },
-									mesh = "msh/pr_s1_han/rumpf_hannover_lod1.msh",
+									materials = { "mat/pr_s1/rumpf_b.mtl", },
+									mesh = "msh/rumpf_b_lod1.msh",
+									name = "body",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/rumpf_b.mtl", },
+									mesh = "msh/kamin_1_lod1.msh",
 									name = "rumpf_S1",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
 									materials = { "mat/shared/glas.mtl", },
-									mesh = "msh/pr_s1_han/glas_hannover_lod0.msh",
+									mesh = "msh/glas_lod0.msh",
 									name = "rumpf_S1",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-								},
-								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/rad_gross_lod1.msh",
-									name = "a1",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6932499408721923828125, 0, 0.976710021495819091796875, 1, },
-								},
-								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/rad_gross_lod1.msh",
-									name = "a2",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.2659499943256378173828125, 0, 0.976710021495819091796875, 1, },
-								},
-								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/rad_vorne_lod1.msh",
-									name = "a3",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.49989986419677734375, 0, 0.528659999370574951171875, 1, },
 								},
 								{ 
 									animations = { 
@@ -549,73 +386,48 @@ return {
 								},
 								{ 
 									animations = { 
-										wheels = { 
+										close_all_doors = { 
+											forward = false,
 											params = { 
-												id = "ani/antrieb_links.ani",
+												id = "ani/seitenfenster.ani",
+											},
+											type = "FILE_REF",
+										},
+										open_all_doors = { 
+											params = { 
+												id = "ani/seitenfenster.ani",
 											},
 											type = "FILE_REF",
 										},
 									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/antrieb_links_lod1.msh",
-									name = "antrieb_links",
-									transf = { 0.978699624538421630859375, 0, -0.20529706776142120361328125, 0, 0, 1, 0, 0, 0.20529706776142120361328125, 0, 0.978699624538421630859375, 0, 0.265946865081787109375, 1.0455100536346435546875, 1.248719692230224609375, 1, },
+									materials = { "mat/pr_s1/beweglich_b.mtl", "mat/shared/glas.mtl", },
+									mesh = "msh/seitenfenster_lod0.msh",
+									name = "rumpf_S1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/hebel_links.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/hebel_links_lod1.msh",
-									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.2952001094818115234375, 1.07630002498626708984375, 1.404099941253662109375, 1, },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/schild_lod1.msh",
+									name = "rumpf_S1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/hinterhebel_links.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/hinterhebel_links_lod1.msh",
-									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3886699974536895751953125, 1.14320003986358642578125, 0.98710000514984130859375, 1, },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/rad_gross_lod1.msh",
+									name = "a1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4878700077533721923828125, 0, 0.976710021495819091796875, 1, },
 								},
 								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/kleinhebel_links.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/kleinhebel_links_lod1.msh",
-									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.898799896240234375, 1.0490000247955322265625, 0.976830005645751953125, 1, },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/rad_gross_lod1.msh",
+									name = "a2",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, 0, 0.976710021495819091796875, 1, },
 								},
 								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/koppel_links.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/koppel_links_lod1.msh",
-									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.2659499943256378173828125, 1.0455000400543212890625, 1.24870002269744873046875, 1, },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/rad_vorne_lod1.msh",
+									name = "a3",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.9685001373291015625, 0, 0.528659999370574951171875, 1, },
 								},
 								{ 
 									animations = { 
@@ -626,136 +438,38 @@ return {
 											type = "FILE_REF",
 										},
 									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/schieber_links_lod1.msh",
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/schieber_links_lod1.msh",
 									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.897200107574462890625, 0.955770015716552734375, 0.982739984989166259765625, 1, },
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.795899868011474609375, 0.955770015716552734375, 0.98799002170562744140625, 1, },
 								},
 								{ 
 									animations = { 
 										wheels = { 
 											params = { 
-												id = "ani/schwinge_links.ani",
+												id = "ani/antrieb_links.ani",
 											},
 											type = "FILE_REF",
 										},
 									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/schwinge_links_lod1.msh",
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/antrieb_links_lod1.msh",
 									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8554999828338623046875, 1.14180004596710205078125, 1.31260001659393310546875, 1, },
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, 0.9489099979400634765625, 1.27199995517730712890625, 1, },
 								},
 								{ 
 									animations = { 
 										wheels = { 
 											params = { 
-												id = "ani/steuer_links.ani",
+												id = "ani/koppel_links.ani",
 											},
 											type = "FILE_REF",
 										},
 									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/steuer_links_lod1.msh",
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/koppel_links_lod1.msh",
 									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.98150002956390380859375, 1.1461999416351318359375, 1.30799996852874755859375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/unterhebel_links.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/unterhebel_links_lod1.msh",
-									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.89750003814697265625, 1.09959995746612548828125, 0.5970799922943115234375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/ventil_links.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/ventil_links_lod1.msh",
-									name = "antrieb_links",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/antrieb_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/antrieb_rechts_lod1.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.2659499943256378173828125, -1.0455000400543212890625, 0.705179989337921142578125, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/hebel_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/hebel_rechts_lod1.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.2952001094818115234375, -1.07630002498626708984375, 1.404099941253662109375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/hinterhebel_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/hinterhebel_rechts_lod1.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3886699974536895751953125, -1.14320003986358642578125, 0.98710000514984130859375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/kleinhebel_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/kleinhebel_rechts_lod1.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.898799896240234375, -1.0490000247955322265625, 0.976830005645751953125, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/koppel_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/koppel_rechts_lod1.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.2659499943256378173828125, -1.0455000400543212890625, 0.705179989337921142578125, 1, },
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, 0.948939979076385498046875, 1.27199995517730712890625, 1, },
 								},
 								{ 
 									animations = { 
@@ -766,66 +480,38 @@ return {
 											type = "FILE_REF",
 										},
 									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/schieber_rechts_lod1.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.897200107574462890625, -0.955770015716552734375, 0.982739984989166259765625, 1, },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/schieber_rechts_lod1.msh",
+									name = "antrieb_links",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.795899868011474609375, -0.955770015716552734375, 0.98799002170562744140625, 1, },
 								},
 								{ 
 									animations = { 
 										wheels = { 
 											params = { 
-												id = "ani/schwinge_rechts.ani",
+												id = "ani/antrieb_rechts.ani",
 											},
 											type = "FILE_REF",
 										},
 									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/schwinge_rechts_lod1.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8554999828338623046875, -1.14180004596710205078125, 1.31260001659393310546875, 1, },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/antrieb_rechts_lod1.msh",
+									name = "antrieb_links",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, -0.9351999759674072265625, 0.6834800243377685546875, 1, },
 								},
 								{ 
 									animations = { 
 										wheels = { 
 											params = { 
-												id = "ani/steuer_rechts.ani",
+												id = "ani/koppel_rechts.ani",
 											},
 											type = "FILE_REF",
 										},
 									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/steuer_rechts_lod1.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.98150002956390380859375, -1.1461999416351318359375, 1.30799996852874755859375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/unterhebel_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/unterhebel_rechts_lod1.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.89750003814697265625, -1.09959995746612548828125, 0.5970799922943115234375, 1, },
-								},
-								{ 
-									animations = { 
-										wheels = { 
-											params = { 
-												id = "ani/ventil_rechts.ani",
-											},
-											type = "FILE_REF",
-										},
-									},
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
-									mesh = "msh/pr_s1_han/ventil_rechts_lod1.msh",
-									name = "antrieb_rechts",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8173000812530517578125, -0.9752600193023681640625, 1.40419995784759521484375, 1, },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/koppel_rechts_lod1.msh",
+									name = "antrieb_links",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, -0.9351999759674072265625, 0.6834800243377685546875, 1, },
 								},
 							},
 							name = "prS1",
@@ -834,8 +520,8 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/pr_s1_han/tender.mtl", },
-									mesh = "msh/pr_s1_han/tender_alt_lod1.msh",
+									materials = { "mat/pr_s1/tender_b.mtl", },
+									mesh = "msh/tender_alt_lod1.msh",
 									name = "rumpf_s1_tender",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
@@ -884,19 +570,19 @@ return {
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
 									mesh = "msh/rad_tender_lod1.msh",
 									name = "a4",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.65799999237060546875, 0, 0.504630029201507568359375, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
 									mesh = "msh/rad_tender_lod1.msh",
 									name = "a5",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.014999999664723873138427734375, 0, 0.504630029201507568359375, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
 									mesh = "msh/rad_tender_lod1.msh",
 									name = "a6",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6150000095367431640625, 0, 0.504630029201507568359375, 1, },
@@ -918,28 +604,34 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/pr_s1_han/rumpf.mtl", },
+									materials = { "mat/pr_s1/rumpf_b.mtl", },
 									mesh = "msh/rumpf_lod2.msh",
 									name = "rumpf_S1",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
+									materials = { "mat/pr_s1/rumpf_b.mtl", },
+									mesh = "msh/kamin_1_lod2.msh",
+									name = "rumpf_S1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
 									mesh = "msh/rad_gross_lod2.msh",
 									name = "a1",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6932499408721923828125, 0, 0.976710021495819091796875, 1, },
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4878700077533721923828125, 0, 0.976710021495819091796875, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
 									mesh = "msh/rad_gross_lod2.msh",
 									name = "a2",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.2659499943256378173828125, 0, 0.976710021495819091796875, 1, },
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, 0, 0.976710021495819091796875, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
 									mesh = "msh/rad_vorne_lod2.msh",
 									name = "a3",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.49989986419677734375, 0, 0.528659999370574951171875, 1, },
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.9685001373291015625, 0, 0.528659999370574951171875, 1, },
 								},
 							},
 							name = "prS1",
@@ -948,25 +640,25 @@ return {
 						{ 
 							children = {
 								{ 
-									materials = { "mat/pr_s1_han/tender.mtl", },
+									materials = { "mat/pr_s1/tender_b.mtl", },
 									mesh = "msh/tender_alt_lod2.msh",
 									name = "rumpf_s1_tender",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
 									mesh = "msh/rad_tender_lod2.msh",
 									name = "a4",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.65799999237060546875, 0, 0.504630029201507568359375, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
 									mesh = "msh/rad_tender_lod2.msh",
 									name = "a5",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.014999999664723873138427734375, 0, 0.504630029201507568359375, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1_han/beweglich.mtl", },
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
 									mesh = "msh/rad_tender_lod2.msh",
 									name = "a6",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6150000095367431640625, 0, 0.504630029201507568359375, 1, },
@@ -985,15 +677,15 @@ return {
 		},
 		metadata = { 
 			availability = { 
-				yearFrom = 1884,
-				yearTo = 1922,
+				yearFrom = 1885,
+				yearTo = 1923,
 			},
 			cost = { 
 				price = -1,
 			},
 			description = { 
-				description = _("pr_s1han_desc"),
-				name = _("pr_s1han"),
+				description = _("pr_s1b4_desc"),
+				name = _("pr_s1b4"),
 			},
 			emissions = { 
 				noise = { 
@@ -1015,7 +707,7 @@ return {
 				brakeDeceleration = 2.5,
 				engines = {
 					{ 
-						power = 435,
+						power = 430,
 						tractiveEffort = 60,
 						type = "STEAM",
 					},
@@ -1264,7 +956,7 @@ return {
 							},
 						},
 						particleId = "",
-						position = { 3.650000095367431640625, -0.949999988079071044921875, 0.439999997615814208984375, },
+						position = { 5.53999996185302734375, -1, 0.4600000083446502685546875, },
 						shape = { 
 							point = { 
 								maxDir = 0.800000011920928955078125,
@@ -1316,7 +1008,7 @@ return {
 							},
 						},
 						particleId = "",
-						position = { 3.650000095367431640625, 0.949999988079071044921875, 0.439999997615814208984375, },
+						position = { 5.53999996185302734375, 1, 0.4600000083446502685546875, },
 						shape = { 
 							point = { 
 								maxDir = 0.800000011920928955078125,
@@ -1420,10 +1112,11 @@ return {
 						},
 					},
 				},
-				engineTags = { "TRAIN", "ELECTRIC_TRAIN", },
+				engineTransportModes = { "TRAIN", "ELECTRIC_TRAIN", },
 				groupFileName = "menu_pr_s1.mdl",
 				reversible = false,
-				tags = { "TRAIN", "ELECTRIC_TRAIN", },
+				transportModes = { "TRAIN", "ELECTRIC_TRAIN", },
+				filterTags = { "default", },
 			},
 		},
 		version = 2,

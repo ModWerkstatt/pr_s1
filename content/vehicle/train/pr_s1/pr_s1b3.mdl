@@ -48,30 +48,6 @@ return {
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1/beweglich_b.mtl", },
-									mesh = "msh/raumer_lod0.msh",
-									name = "rumpf_S1",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-								},
-								{ 
-									materials = { "mat/pr_s1/beweglich_b.mtl", },
-									mesh = "msh/rad_gross_lod0.msh",
-									name = "a1",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4878700077533721923828125, 0, 0.976710021495819091796875, 1, },
-								},
-								{ 
-									materials = { "mat/pr_s1/beweglich_b.mtl", },
-									mesh = "msh/rad_gross_lod0.msh",
-									name = "a2",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, 0, 0.976710021495819091796875, 1, },
-								},
-								{ 
-									materials = { "mat/pr_s1/beweglich_b.mtl", },
-									mesh = "msh/rad_vorne_lod0.msh",
-									name = "a3",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.9685001373291015625, 0, 0.528659999370574951171875, 1, },
-								},
-								{ 
 									animations = { 
 										front_forward_parts_off = { 
 											interpolation = "NEAREST",
@@ -114,6 +90,57 @@ return {
 									mesh = "msh/licht_vorne_rot_lod0.msh",
 									name = "taillights_bwd",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/innen.mtl", },
+									mesh = "msh/innenrahmen_lod0.msh",
+									name = "rumpf_S1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									animations = { 
+										close_all_doors = { 
+											forward = false,
+											params = { 
+												id = "ani/seitenfenster.ani",
+											},
+											type = "FILE_REF",
+										},
+										open_all_doors = { 
+											params = { 
+												id = "ani/seitenfenster.ani",
+											},
+											type = "FILE_REF",
+										},
+									},
+									materials = { "mat/pr_s1/beweglich_b.mtl", "mat/shared/glas.mtl", },
+									mesh = "msh/seitenfenster_lod0.msh",
+									name = "rumpf_S1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/raumer_lod0.msh",
+									name = "rumpf_S1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/rad_gross_lod0.msh",
+									name = "a1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4878700077533721923828125, 0, 0.976710021495819091796875, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/rad_gross_lod0.msh",
+									name = "a2",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, 0, 0.976710021495819091796875, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/rad_vorne_lod0.msh",
+									name = "a3",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.9685001373291015625, 0, 0.528659999370574951171875, 1, },
 								},
 								{ 
 									animations = { 
@@ -314,30 +341,6 @@ return {
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 								},
 								{ 
-									materials = { "mat/pr_s1/beweglich_b.mtl", },
-									mesh = "msh/raumer_lod1.msh",
-									name = "rumpf_S1",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-								},
-								{ 
-									materials = { "mat/pr_s1/beweglich_b.mtl", },
-									mesh = "msh/rad_gross_lod1.msh",
-									name = "a1",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4878700077533721923828125, 0, 0.976710021495819091796875, 1, },
-								},
-								{ 
-									materials = { "mat/pr_s1/beweglich_b.mtl", },
-									mesh = "msh/rad_gross_lod1.msh",
-									name = "a2",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, 0, 0.976710021495819091796875, 1, },
-								},
-								{ 
-									materials = { "mat/pr_s1/beweglich_b.mtl", },
-									mesh = "msh/rad_vorne_lod1.msh",
-									name = "a3",
-									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.9685001373291015625, 0, 0.528659999370574951171875, 1, },
-								},
-								{ 
 									animations = { 
 										front_forward_parts_off = { 
 											interpolation = "NEAREST",
@@ -380,6 +383,51 @@ return {
 									mesh = "msh/licht_vorne_rot_lod0.msh",
 									name = "taillights_bwd",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									animations = { 
+										close_all_doors = { 
+											forward = false,
+											params = { 
+												id = "ani/seitenfenster.ani",
+											},
+											type = "FILE_REF",
+										},
+										open_all_doors = { 
+											params = { 
+												id = "ani/seitenfenster.ani",
+											},
+											type = "FILE_REF",
+										},
+									},
+									materials = { "mat/pr_s1/beweglich_b.mtl", "mat/shared/glas.mtl", },
+									mesh = "msh/seitenfenster_lod0.msh",
+									name = "rumpf_S1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/raumer_lod1.msh",
+									name = "rumpf_S1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/rad_gross_lod1.msh",
+									name = "a1",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4878700077533721923828125, 0, 0.976710021495819091796875, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/rad_gross_lod1.msh",
+									name = "a2",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.982800006866455078125, 0, 0.976710021495819091796875, 1, },
+								},
+								{ 
+									materials = { "mat/pr_s1/beweglich_b.mtl", },
+									mesh = "msh/rad_vorne_lod1.msh",
+									name = "a3",
+									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.9685001373291015625, 0, 0.528659999370574951171875, 1, },
 								},
 								{ 
 									animations = { 
@@ -629,15 +677,15 @@ return {
 		},
 		metadata = { 
 			availability = { 
-				yearFrom = 1890,
+				yearFrom = 1900,
 				yearTo = 1923,
 			},
 			cost = { 
 				price = -1,
 			},
 			description = { 
-				description = _("pr_s1b2_desc"),
-				name = _("pr_s1b2"),
+				description = _("pr_s1b3_desc"),
+				name = _("pr_s1b3"),
 			},
 			emissions = { 
 				noise = { 
@@ -1064,10 +1112,11 @@ return {
 						},
 					},
 				},
-				engineTags = { "TRAIN", "ELECTRIC_TRAIN", },
+				engineTransportModes = { "TRAIN", "ELECTRIC_TRAIN", },
 				groupFileName = "menu_pr_s1.mdl",
 				reversible = false,
-				tags = { "TRAIN", "ELECTRIC_TRAIN", },
+				transportModes = { "TRAIN", "ELECTRIC_TRAIN", },
+				filterTags = { "default", },
 			},
 		},
 		version = 2,
